@@ -10,8 +10,10 @@ deadlock : - use ***jps*** to track process id, use ***jstack*** check detail in
 
 philosopher : [philosopher](concurrent/src/com/eat)
 
+<pre>
 reentrantlock : ReentranLock(boolean fair);
                 lock();  unlock();
                 can have different condition to wait:  Condition newCondition = new Condition();   newCondition.await();   signal();   signalAll();
                 can avoid deadlock:                    tryLock(time:"", unit:"");
                 can be interrupted:                    lockInterruptibly();
+</pre>
