@@ -17,3 +17,8 @@ reentrantlock : ReentranLock(boolean fair);
                 can avoid deadlock:                    tryLock(time:"", unit:"");
                 can be interrupted:                    lockInterruptibly();
 </pre>
+
+
+alternater print three character : [alternatePrint](concurrent/src/com/alternatePrint)
+
+print number in order : [orderPrint](concurrent/src/com/orderPrint)
