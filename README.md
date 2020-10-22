@@ -2,13 +2,18 @@
 
 ### concurrent
 
-simulate postman and people (one to one) : [post](concurrent/src/com/post)
+| name  |  track | discription |
+| - | - | - |
+| post | [post](concurrent/src/com/post) | simulate postman and people (one to one) |
+| cp | [cp](concurrent/scr/com/cp) | consumer/producer problem |
+| philosopher | [philosopher](concurrent/src/com/eat) | Dining-Philosophers Problem |
+| alternate print | [alternatePrint](concurrent/src/com/alternatePrint) | control three threads alternater print three character several times
+| order print | [orderPrint](concurrent/src/com/orderPrint) | control threads print in order |
+| monitor thread | [monitorTh](concurrent/src/com/monitorTh) | monitor thread start or start show in html (missing main function) |
+| double checked locking |  [dcl](concurrent/src/com/doubleCheckedLocking) | Implement thread-safe object creation (prevent multiple calls and multiple outputs) |
 
-consumer/producer problem : [cp](concurrent/scr/com/cp)
 
 deadlock : - use ***jps*** to track process id, use ***jstack*** check detail information about deadlock and list the reason of deadlock - use ***jconsole***
-
-philosopher : [philosopher](concurrent/src/com/eat)
 
 <pre>
 reentrantlock : ReentranLock(boolean fair);
@@ -17,8 +22,3 @@ reentrantlock : ReentranLock(boolean fair);
                 can avoid deadlock:                    tryLock(time:"", unit:"");
                 can be interrupted:                    lockInterruptibly();
 </pre>
-
-
-alternater print three character : [alternatePrint](concurrent/src/com/alternatePrint)
-
-print number in order : [orderPrint](concurrent/src/com/orderPrint)
