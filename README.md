@@ -23,3 +23,5 @@ reentrantlock : ReentranLock(boolean fair);
                 can avoid deadlock:                    tryLock(time:"", unit:"");
                 can be interrupted:                    lockInterruptibly();
 </pre>
+
+longAdder: more effecient than AtomicLong
